@@ -33,6 +33,14 @@ class DrawerScreen extends StatelessWidget {
               ListIcon: Icons.home_outlined,
               ListText: "Home",
               ListFunction: () {}),
+              listTile1(
+              ListIcon: Icons.login,
+              ListText: "login",
+              ListFunction: () {}),
+              listTile1(
+              ListIcon: Icons.info_outline,
+              ListText: "About Us",
+              ListFunction: () {}),
         ],
       ),
     );
