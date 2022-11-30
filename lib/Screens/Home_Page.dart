@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kp/themes_constant.dart';
-import 'Drawer_Screen.dart';
+import 'package:kp/navigationDrawer/navigationDrawer.dart';
 
 // home page
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class homePage extends StatelessWidget {
+  const homePage({Key? key}) : super(key: key);
+  static const String routeName = '/homePage';
 
   InkWell itemContainerStyle({
     required String itemName,
@@ -58,7 +59,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {},
             ),
           ]),
-      drawer: const DrawerScreen(),
+      drawer: navigationDrawer(),
       body: Column(
         children: [
           const SizedBox(

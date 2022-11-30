@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-
+import 'package:kp/Screens/AboutUs.dart';
+import 'package:kp/Screens/login.dart';
+import 'package:kp/Screens/profilePage.dart';
+import 'package:kp/Screens/registration.dart';
+import 'package:kp/routes/pageRoute.dart';
 import 'Screens/Home_Page.dart';
+import 'routes/pageRoute.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +23,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const HomePage(),
+      home: const homePage(),
+      routes: {
+        pageRoutes.home: (context) => homePage(),
+        pageRoutes.registration: (context) => registrationPage(),
+        pageRoutes.aboutUs: (context) => aboutUsPage(),
+        pageRoutes.profile: (context) => profilePage(),
+        pageRoutes.login: (context) => loginPage(),
+      },
     );
   }
 }
