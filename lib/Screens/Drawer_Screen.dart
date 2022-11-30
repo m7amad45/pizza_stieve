@@ -25,13 +25,22 @@ class DrawerScreen extends StatelessWidget {
       backgroundColor: Color.fromRGBO(47, 47, 47, 1),
       child: ListView(
         children: [
-          listTile1(
-              ListIcon: Icons.info_outline,
-              ListText: "about",
-              ListFunction: () {}),
+          ElevatedButton Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (BuildContext context){
+              return NewPage();
+                 }), (r){
+          return false;
+             });
           listTile1(
               ListIcon: Icons.home_outlined,
               ListText: "Home",
+              ListFunction: () {}),
+          listTile1(
+              ListIcon: Icons.info_outlined,
+              ListText: "About Us",
+              ListFunction: () {}),
+          listTile1(
+              ListIcon: Icons.info_outlined,
+              ListText: "Contact Us",
               ListFunction: () {}),
         ],
       ),
