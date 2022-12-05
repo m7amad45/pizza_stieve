@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kp/themes_constant.dart';
-import 'package:kp/navigationDrawer/navigationDrawer.dart';
+import 'package:kp/Drawer.dart';
 
 // home page
 
@@ -59,7 +59,7 @@ class homePage extends StatelessWidget {
               onPressed: () {},
             ),
           ]),
-      drawer: navigationDrawer(),
+      drawer: DrawerScreen(),
       body: Column(
         children: [
           const SizedBox(

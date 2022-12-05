@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../navigationDrawer/navigationDrawer.dart';
+import '../Drawer.dart';
 
 class loginPage extends StatelessWidget {
   static const String routeName = '/loginPage';
@@ -11,7 +11,7 @@ class loginPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("login"),
         ),
-        drawer: navigationDrawer(),
+        drawer: DrawerScreen(),
         body: Center(child: Text("This is login page")));
   }
 }
