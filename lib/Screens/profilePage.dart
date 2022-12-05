@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../navigationDrawer/navigationDrawer.dart';
+import '../Drawer.dart';
 
 class profilePage extends StatelessWidget {
   static const String routeName = '/profilePage';
@@ -11,7 +11,7 @@ class profilePage extends StatelessWidget {
         appBar: AppBar(
           title: Text("My Profile"),
         ),
-        drawer: navigationDrawer(),
+        drawer: DrawerScreen(),
         body: Center(child: Text("This is profile page")));
   }
 }
