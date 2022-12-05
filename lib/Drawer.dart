@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 
 import 'package:kp/routes/pageRoute.dart';
 
@@ -32,34 +30,33 @@ class DrawerScreen extends StatelessWidget {
       child: ListView(
         children: [
           listTile1(
-              ListIcon: Icons.info_outline,
-              ListText: "about Us",
-              ListFunction: ()=>           
-              Navigator.pushReplacementNamed(context, pageRoutes.aboutUs),
-),
+            ListIcon: Icons.info_outline,
+            ListText: "about Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.aboutUs),
+          ),
           listTile1(
-              ListIcon: Icons.home_outlined,
-              ListText: "Home",
-              ListFunction: ()=>              
-              Navigator.pushReplacementNamed(context, pageRoutes.home),
-),        listTile1(
-              ListIcon: Icons.login,
-              ListText: "login",
-              ListFunction: ()=>           
-              Navigator.pushReplacementNamed(context, pageRoutes.login),
-),
-        listTile1(
-              ListIcon: Icons.account_circle,
-              ListText: "profile",
-              ListFunction: ()=>           
-              Navigator.pushReplacementNamed(context, pageRoutes.profile),
-),
-        listTile1(
-              ListIcon: Icons.app_registration_outlined,
-              ListText: "registration",
-              ListFunction: ()=>           
-              Navigator.pushReplacementNamed(context, pageRoutes.registration),
-),
+            ListIcon: Icons.home_outlined,
+            ListText: "Home",
+            ListFunction: () => Navigator.pushNamed(context, pageRoutes.home),
+          ),
+          listTile1(
+            ListIcon: Icons.login,
+            ListText: "login",
+            ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
+          ),
+          listTile1(
+            ListIcon: Icons.account_circle,
+            ListText: "profile",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.profile),
+          ),
+          listTile1(
+            ListIcon: Icons.app_registration_outlined,
+            ListText: "registration",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.registration),
+          ),
         ],
       ),
     );
