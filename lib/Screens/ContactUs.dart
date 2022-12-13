@@ -29,6 +29,11 @@ class ContactUsPage extends StatelessWidget {
           color: Theme.of(context).colorScheme.secondary,
           child: Text(
             '''Here in About us
+
+            you have any questions or problems while using
+our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+Email .
+
 ''',
             style: Theme.of(context).textTheme.headline4,
           ),
@@ -51,6 +56,9 @@ Widget build(BuildContext context) {
                 """ 
          HERE 
          CONTACT US 
+              You have any questions or problems while using
+our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+Email .
 
 
 
