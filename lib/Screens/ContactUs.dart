@@ -7,6 +7,8 @@ import '../Drawer.dart';
 class ContactUsPage extends StatelessWidget {
   static const String routeName = '/ContactUsPage';
 
+  const ContactUsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -19,7 +21,7 @@ class ContactUsPage extends StatelessWidget {
           child: Text(
             '''Here in About us
 ''',
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline4,
           ),
         ),
       ),
@@ -38,10 +40,13 @@ Widget build(BuildContext context) {
               color: Theme.of(context).colorScheme.secondary,
               child: Text(
                 """ 
-        aaa
+         HERE 
+         CONTACT US 
+
+
 
 """,
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.headline4,
               ))));
 }
 
