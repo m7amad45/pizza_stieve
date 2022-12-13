@@ -43,30 +43,6 @@ Email .
   }
 }
 
-Widget build(BuildContext context) {
-  return new Scaffold(
-      appBar: AppBar(
-        title: Text("Contact Us"),
-      ),
-      drawer: DrawerScreen(),
-      body: Center(
-          child: Container(
-              color: Theme.of(context).colorScheme.secondary,
-              child: Text(
-                """ 
-         HERE 
-         CONTACT US 
-              You have any questions or problems while using
-our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-Email .
-
-
-
-""",
-                style: Theme.of(context).textTheme.headline4,
-              ))));
-}
-
 void main() {
   String phoneNumber = '552961416';
 
