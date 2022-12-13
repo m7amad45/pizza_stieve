@@ -1,8 +1,17 @@
 import 'dart:html';
-
+import 'AppNotifier.dart';
 import 'package:flutter/material.dart';
-
 import '../Drawer.dart';
+
+class AppStateNotifier extends ChangeNotifier {
+  //
+  bool isDarkMode = false;
+
+  void updateTheme(bool isDarkMode) {
+    this.isDarkMode = isDarkMode;
+    notifyListeners();
+  }
+}
 
 class ContactUsPage extends StatelessWidget {
   static const String routeName = '/ContactUsPage';
