@@ -43,15 +43,7 @@ Widget build(BuildContext context) {
               color: Theme.of(context).colorScheme.secondary,
               child: Text(
                 """ 
-        Here in About us
-version 
-the latest version is already installed 
-
-TERMS & Condition :
-1- you are above 18 and you respones for all you do in our App
-2-We can provide you with our services here with features, and you can cancel the features, and the conditions may change according to circumstances
-
-Thank you and wish you a pleasant service
+        aaa
 
 """,
                 style: Theme.of(context).textTheme.headline6,

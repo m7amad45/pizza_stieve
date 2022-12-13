@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kp/Screens/AboutUs.dart';
+import 'package:kp/Screens/ContactUs.dart';
 import 'package:kp/Screens/login.dart';
 import 'package:kp/Screens/profilePage.dart';
 import 'package:kp/Screens/registration.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
+        pageRoutes.ContactUs: (context) => ContactUsPage(),
       },
     );
   }

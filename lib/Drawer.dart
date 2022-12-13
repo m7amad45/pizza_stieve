@@ -57,6 +57,12 @@ class DrawerScreen extends StatelessWidget {
             ListFunction: () =>
                 Navigator.pushNamed(context, pageRoutes.registration),
           ),
+          listTile1(
+            ListIcon: Icons.info_outline,
+            ListText: "Contact Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.ContactUs),
+          ),
         ],
       ),
     );
