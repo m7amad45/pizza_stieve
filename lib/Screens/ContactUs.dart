@@ -28,12 +28,13 @@ class contactUsPage extends StatelessWidget {
       body: Center(
         child: Container(
           child: Text(
-            '''Here in About us
+            '''Here in Contact us
 
             you have any questions or problems while using
 our pizza steve app, visit the following pages ethir Whatsapp phone number or 
 Email .
-
+PhoneNumber = {966}552961416
+Email= ammmar0089@gmail.com
 ''',
           ),
         ),
