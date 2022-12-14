@@ -14,7 +14,8 @@ class aboutUsPage extends StatelessWidget {
       ),
       drawer: DrawerScreen(),
       body: Center(
-        child: Text('''
+        child: Text(
+          '''
  Here in About us
  version 
  the latest version is already installed 
@@ -27,6 +28,7 @@ class aboutUsPage extends StatelessWidget {
  according to circumstances Thank you and wish you a pleasant
  service
  ''',
+          style: Theme.of(context).textTheme.headline4,
         ),
       ),
     );
