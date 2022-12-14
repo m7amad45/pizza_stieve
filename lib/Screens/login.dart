@@ -2,21 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:kp/themes_constant.dart';
 import '../Drawer.dart';
 
-// class loginPage extends StatelessWidget {
-//   static const String routeName = '/loginPage';
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return new Scaffold(
-//         appBar: AppBar(
-//           title: Text("login"),
-//         ),
-//         drawer: DrawerScreen(),
-//         body: Center(child: Text("This is login page")));
-//   }
-// }
-
-
 class loginPage extends StatefulWidget {
   static const String routeName = '/loginPage';
 
