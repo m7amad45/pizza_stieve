@@ -20,6 +20,7 @@ class contactUsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unnecessary_new
     return new Scaffold(
       appBar: AppBar(
         title: Text("Contact Us"),
@@ -30,12 +31,13 @@ class contactUsPage extends StatelessWidget {
           child: Text(
             '''Here in Contact us
 
-            you have any questions or problems while using
-our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-Email .
-PhoneNumber = {966}552961416
-Email= ammmar0089@gmail.com
+   you have any questions or problems while using
+  our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+  Email .
+  PhoneNumber = (966)552961416
+  Email= ammmar0089@gmail.com
 ''',
+            style: Theme.of(context).textTheme.headline5,
           ),
         ),
       ),
