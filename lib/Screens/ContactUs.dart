@@ -28,7 +28,7 @@ class contactUsPage extends StatelessWidget {
         child: Container(
           color: Theme.of(context).colorScheme.secondary,
           child: Text(
-            '''Here in About us
+            '''Here in Contact Us
 
             you have any questions or problems while using
 our pizza steve app, visit the following pages ethir Whatsapp phone number or 
