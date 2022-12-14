@@ -34,8 +34,21 @@ class contactUsPage extends StatelessWidget {
    you have any questions or problems while using
   our pizza steve app, visit the following pages ethir Whatsapp phone number or 
   Email .
-  PhoneNumber = (966)552961416
-  Email= ammmar0089@gmail.com
+
+    For the Emirates, contact us on the following number 6625156 from 9 am to 11 pm
+
+    For Saudi Arabia, call us on (966)55296416 from 8 am to 10 pm
+
+    For Argantin, call us on 16358 from 9 am to 9 pm.
+
+    For the Emirates and Saudi Arabia, communicate
+
+    with us on e-mail
+
+    ammmar0089@gmail.com
+
+    For Egypt, email us at egypt@noon.com
+
 ''',
             style: Theme.of(context).textTheme.headline5,
           ),
