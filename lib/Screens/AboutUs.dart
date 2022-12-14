@@ -12,7 +12,7 @@ class aboutUsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("About Us"),
       ),
-      
+      drawer: DrawerScreen(),
       body:Center( 
         child: Text(
         '''Here in About us
@@ -26,7 +26,7 @@ you can cancel the features, and the conditions may change according
 to circumstances Thank you and wish you a pleasant service''',
 
 
-        style: Theme.of(context).textTheme.headline6,
+        
       ),
       ),
       );
