@@ -1,14 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:kp/Screens/AboutUs.dart';
+
 import 'package:kp/Screens/ContactUs.dart';
 import 'package:kp/Screens/login.dart';
 import 'package:kp/Screens/profilePage.dart';
 import 'package:kp/Screens/registration.dart';
+import 'package:kp/Screens/welcom_screen.dart';
 import 'package:kp/routes/pageRoute.dart';
 import 'Screens/Home_Page.dart';
 import 'routes/pageRoute.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -24,14 +29,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const homePage(),
+      home: WelcomeScreen(),
       routes: {
+        pageRoutes.welcomePage: (context) => WelcomeScreen(),
         pageRoutes.home: (context) => homePage(),
         pageRoutes.registration: (context) => registrationPage(),
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
-        pageRoutes.ContactUs: (context) => ContactUsPage(),
+        // pageRoutes.ContactUs: (context) => ContactUsPage(),
       },
     );
   }
