@@ -27,46 +27,43 @@ class DrawerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Color.fromRGBO(47, 47, 47, 1),
-      child: Center(
-        child: ListView(
-          children: [
-            listTile1(
-              ListIcon: Icons.info_outline,
-              ListText: "about Us",
-              ListFunction: () =>
-                  Navigator.pushNamed(context, pageRoutes.aboutUs),
-            ),
-            listTile1(
-              ListIcon: Icons.home_outlined,
-              ListText: "Home",
-              ListFunction: () => Navigator.pushNamed(context, pageRoutes.home),
-            ),
-            // listTile1(
-            //   ListIcon: Icons.login,
-            //   ListText: "login",
-            //   ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
-            // ),
-            listTile1(
-              ListIcon: Icons.account_circle,
-              ListText: "profile",
-              ListFunction: () =>
-                  Navigator.pushNamed(context, pageRoutes.profile),
-            ),
-            // listTile1(
-            //   ListIcon: Icons.app_registration_outlined,
-            //   ListText: "registration",
-            //   ListFunction: () =>
-            //       Navigator.pushNamed(context, pageRoutes.registration),
-            // ),
-            listTile1(
-                ListIcon: Icons.info_outline,
-                ListText: "Contact Us",
-                ListFunction: () {}
-                // () =>
-                //     Navigator.pushNamed(context, pageRoutes.ContactUs),
-                ),
-          ],
-        ),
+      child: ListView(
+        children: [
+          listTile1(
+            ListIcon: Icons.info_outline,
+            ListText: "about Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.aboutUs),
+          ),
+          listTile1(
+            ListIcon: Icons.home_outlined,
+            ListText: "Home",
+            ListFunction: () => Navigator.pushNamed(context, pageRoutes.home),
+          ),
+          listTile1(
+            ListIcon: Icons.login,
+            ListText: "login",
+            ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
+          ),
+          listTile1(
+            ListIcon: Icons.account_circle,
+            ListText: "profile",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.profile),
+          ),
+          listTile1(
+            ListIcon: Icons.app_registration_outlined,
+            ListText: "registration",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.registration),
+          ),
+          listTile1(
+            ListIcon: Icons.info_outline,
+            ListText: "Contact Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.ContactUs),
+          ),
+        ],
       ),
     );
   }
