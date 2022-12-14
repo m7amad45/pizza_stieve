@@ -13,10 +13,10 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
-class ContactUsPage extends StatelessWidget {
-  static const String routeName = '/ContactUsPage';
+class contactUsPage extends StatelessWidget {
+  static const String routeName = '/contactUsPage';
 
-  const ContactUsPage({super.key});
+  const contactUsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
