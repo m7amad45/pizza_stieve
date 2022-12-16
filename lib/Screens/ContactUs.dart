@@ -1,47 +1,48 @@
-// import 'dart:html';
-// import 'AppNotifier.dart';
-// import 'package:flutter/material.dart';
-// import '../Drawer.dart';
+import 'dart:html';
+import 'AppNotifier.dart';
+import 'package:flutter/material.dart';
+import '../Drawer.dart';
 
-// class AppStateNotifier extends ChangeNotifier {
-//   //
-//   bool isDarkMode = false;
+class AppStateNotifier extends ChangeNotifier {
+  //
+  bool isDarkMode = false;
 
-//   void updateTheme(bool isDarkMode) {
-//     this.isDarkMode = isDarkMode;
-//     notifyListeners();
-//   }
-// }
+  void updateTheme(bool isDarkMode) {
+    this.isDarkMode = isDarkMode;
+    notifyListeners();
+  }
+}
 
-// class ContactUsPage extends StatelessWidget {
-//   static const String routeName = '/ContactUsPage';
+class contactUsPage extends StatelessWidget {
+  static const String routeName = '/contactUsPage';
 
-//   const ContactUsPage({super.key});
+  const contactUsPage({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return new Scaffold(
-//       appBar: AppBar(
-//         title: Text("Contact Us"),
-//       ),
-//       body: Center(
-//         child: Container(
-//           color: Theme.of(context).colorScheme.secondary,
-//           child: Text(
-//             '''Here in About us
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: AppBar(
+        title: Text("Contact Us"),
+      ),
+      drawer: DrawerScreen(),
+      body: Center(
+        child: Container(
+          color: Theme.of(context).colorScheme.secondary,
+          child: Text(
+            '''Here in About us
 
-//             you have any questions or problems while using
-// our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-// Email .
+            you have any questions or problems while using
+our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+Email .
 
-// ''',
-//             style: Theme.of(context).textTheme.headline4,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+''',
+            style: Theme.of(context).textTheme.headline4,
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 // // void main() {
 // //   String phoneNumber = '552961416';
