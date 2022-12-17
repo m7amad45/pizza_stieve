@@ -40,29 +40,30 @@ class DrawerScreen extends StatelessWidget {
             ListText: "Home",
             ListFunction: () => Navigator.pushNamed(context, pageRoutes.home),
           ),
-          listTile1(
-            ListIcon: Icons.login,
-            ListText: "login",
-            ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
-          ),
+          // listTile1(
+          //   ListIcon: Icons.login,
+          //   ListText: "login",
+          //   ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
+          // ),
           listTile1(
             ListIcon: Icons.account_circle,
             ListText: "profile",
             ListFunction: () =>
                 Navigator.pushNamed(context, pageRoutes.profile),
           ),
+          // listTile1(
+          //   ListIcon: Icons.app_registration_outlined,
+          //   ListText: "registration",
+          //   ListFunction: () =>
+          //       Navigator.pushNamed(context, pageRoutes.registration),
+          // ),
           listTile1(
-            ListIcon: Icons.app_registration_outlined,
-            ListText: "registration",
-            ListFunction: () =>
-                Navigator.pushNamed(context, pageRoutes.registration),
-          ),
-          listTile1(
-            ListIcon: Icons.info_outline,
-            ListText: "Contact Us",
-            ListFunction: () =>
-                Navigator.pushNamed(context, pageRoutes.ContactUs),
-          ),
+              ListIcon: Icons.info_outline,
+              ListText: "Contact Us",
+              ListFunction: () {}
+              // () =>
+              //     Navigator.pushNamed(context, pageRoutes.ContactUs),
+              ),
         ],
       ),
     );
