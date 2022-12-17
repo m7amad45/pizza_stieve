@@ -57,13 +57,19 @@ class DrawerScreen extends StatelessWidget {
           //   ListFunction: () =>
           //       Navigator.pushNamed(context, pageRoutes.registration),
           // ),
+          
           listTile1(
-              ListIcon: Icons.info_outline,
-              ListText: "Contact Us",
-              ListFunction: () {}
-              // () =>
-              //     Navigator.pushNamed(context, pageRoutes.ContactUs),
-              ),
+            ListIcon: Icons.info_outline,
+            ListText: "Contact Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.contactUs),
+          ),
+          listTile1(
+            ListIcon: Icons.camera,
+            ListText: "Camera",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.camera),
+          ),
         ],
       ),
     );
