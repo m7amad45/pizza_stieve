@@ -29,13 +29,28 @@ class contactUsPage extends StatelessWidget {
         child: Container(
           color: Theme.of(context).colorScheme.secondary,
           child: Text(
-            '''Here in About us
+            '''Here in Contact us
 
-            you have any questions or problems while using
-our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-Email .
+             you have any questions or problems while using
+ our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+ Email .
+ 
+ For the Emirates, contact us on the following number 80038888 from 9 am to 11 pm
 
-''',
+ For Saudi Arabia, contact us at (966) 552961416 from 8 am to 10 pm
+
+ For Egypt, call us on 16358 from 9 am to 9 pm.
+
+ For the Emirates and Saudi Arabia, communicate
+
+ with us on e-mail
+
+ ammmar0089@gmail.com
+
+ For Egypt, email us at egypt@noon.com
+
+
+ ''',
             style: Theme.of(context).textTheme.headline4,
           ),
         ),
@@ -43,6 +58,7 @@ Email .
     );
   }
 }
+
 
 // // void main() {
 // //   String phoneNumber = '552961416';
@@ -60,5 +76,4 @@ Email .
 // // i take some of Contact us from many apps and internet  : 
 // //Galary , massage and whatsapp . with some limit action for the user  
 // // we make Contact us page alone not together is to make it easy to mold operations and change becomes
-// // flexible with no interfernce in other pages to avoid Errors .
-
+// // flexible with no interfernce in other pages to avoid Error

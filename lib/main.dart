@@ -1,22 +1,27 @@
+import 'package:camera/camera.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:kp/Drawer.dart';
 import 'package:kp/Screens/AboutUs.dart';
-
 import 'package:kp/Screens/ContactUs.dart';
 import 'package:kp/Screens/login.dart';
 import 'package:kp/Screens/profilePage.dart';
 import 'package:kp/Screens/registration.dart';
 import 'package:kp/Screens/welcom_screen.dart';
-import 'package:kp/cCamera/Camare.dart';
+import 'package:kp/cCamera/camera_screen.dart';
 import 'package:kp/routes/pageRoute.dart';
 import 'Screens/Home_Page.dart';
 import 'routes/pageRoute.dart';
-import 'cCamera/Camare.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+
+    cameras = await availableCameras();
+  } on CameraException catch (e) {
+    print('Error in fetching the cameras: $e');
+  }
   runApp(const MyApp());
 }
 
@@ -40,10 +45,8 @@ class MyApp extends StatelessWidget {
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
-        pageRoutes.contactUs: (context) => contactUsPage(),
-        pageRoutes.camera: (context) => cameraPage(),
-
-
+        pageRoutes.ContactUs: (context) => contactUsPage(),
+        pageRoutes.camera: (context) => CameraScreen(),
       },
     );
   }

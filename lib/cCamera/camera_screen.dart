@@ -12,7 +12,7 @@ import '../main.dart';
 List<CameraDescription> cameras = [];
 
 class CameraScreen extends StatefulWidget {
-  static const String routeName = '/loginPage';
+  static const String routeName = '/CameraScreen';
   
   @override
 
