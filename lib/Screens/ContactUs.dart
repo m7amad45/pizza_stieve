@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 import '../Drawer.dart';
 
 class AppStateNotifier extends ChangeNotifier {
+<<<<<<< HEAD
+=======
+  //
+>>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
   bool isDarkMode = false;
 
   void updateTheme(bool isDarkMode) {
@@ -12,10 +16,17 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
+<<<<<<< HEAD
 class ContactUsPage extends StatelessWidget {
   static const String routeName = '/ContactUsPage';
 
   const ContactUsPage({super.key});
+=======
+class contactUsPage extends StatelessWidget {
+  static const String routeName = '/contactUsPage';
+
+  const contactUsPage({super.key});
+>>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +34,15 @@ class ContactUsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Contact Us"),
       ),
+<<<<<<< HEAD
+=======
+      drawer: DrawerScreen(),
+>>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
       body: Center(
         child: Container(
           color: Theme.of(context).colorScheme.secondary,
           child: Text(
+<<<<<<< HEAD
             '''Here in Contact us
 
              you have any questions or problems while using
@@ -49,6 +65,15 @@ class ContactUsPage extends StatelessWidget {
 
 
  ''',
+=======
+            '''Here in About us
+
+            you have any questions or problems while using
+our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+Email .
+
+''',
+>>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
             style: Theme.of(context).textTheme.headline4,
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:kp/Drawer.dart';
 import 'package:kp/Screens/AboutUs.dart';
 
 import 'package:kp/Screens/ContactUs.dart';
@@ -7,9 +8,11 @@ import 'package:kp/Screens/login.dart';
 import 'package:kp/Screens/profilePage.dart';
 import 'package:kp/Screens/registration.dart';
 import 'package:kp/Screens/welcom_screen.dart';
+import 'package:kp/cCamera/Camare.dart';
 import 'package:kp/routes/pageRoute.dart';
 import 'Screens/Home_Page.dart';
 import 'routes/pageRoute.dart';
+import 'cCamera/Camare.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +40,14 @@ class MyApp extends StatelessWidget {
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
+<<<<<<< HEAD
         pageRoutes.ContactUs: (context) => ContactUsPage(),
+=======
+        pageRoutes.contactUs: (context) => contactUsPage(),
+        pageRoutes.camera: (context) => cameraPage(),
+
+
+>>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
       },
     );
   }
