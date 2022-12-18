@@ -1,47 +1,61 @@
-// import 'dart:html';
-// import 'AppNotifier.dart';
-// import 'package:flutter/material.dart';
-// import '../Drawer.dart';
+import 'dart:html';
+import 'AppNotifier.dart';
+import 'package:flutter/material.dart';
+import '../Drawer.dart';
 
-// class AppStateNotifier extends ChangeNotifier {
-//   //
-//   bool isDarkMode = false;
+class AppStateNotifier extends ChangeNotifier {
+  bool isDarkMode = false;
 
-//   void updateTheme(bool isDarkMode) {
-//     this.isDarkMode = isDarkMode;
-//     notifyListeners();
-//   }
-// }
+  void updateTheme(bool isDarkMode) {
+    this.isDarkMode = isDarkMode;
+    notifyListeners();
+  }
+}
 
-// class ContactUsPage extends StatelessWidget {
-//   static const String routeName = '/ContactUsPage';
+class ContactUsPage extends StatelessWidget {
+  static const String routeName = '/ContactUsPage';
 
-//   const ContactUsPage({super.key});
+  const ContactUsPage({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return new Scaffold(
-//       appBar: AppBar(
-//         title: Text("Contact Us"),
-//       ),
-//       body: Center(
-//         child: Container(
-//           color: Theme.of(context).colorScheme.secondary,
-//           child: Text(
-//             '''Here in About us
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: AppBar(
+        title: Text("Contact Us"),
+      ),
+      body: Center(
+        child: Container(
+          color: Theme.of(context).colorScheme.secondary,
+          child: Text(
+            '''Here in Contact us
 
-//             you have any questions or problems while using
-// our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-// Email .
+             you have any questions or problems while using
+ our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+ Email .
+ 
+ For the Emirates, contact us on the following number 80038888 from 9 am to 11 pm
 
-// ''',
-//             style: Theme.of(context).textTheme.headline4,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+ For Saudi Arabia, contact us at (966) 552961416 from 8 am to 10 pm
+
+ For Egypt, call us on 16358 from 9 am to 9 pm.
+
+ For the Emirates and Saudi Arabia, communicate
+
+ with us on e-mail
+
+ ammmar0089@gmail.com
+
+ For Egypt, email us at egypt@noon.com
+
+
+ ''',
+            style: Theme.of(context).textTheme.headline4,
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 // // void main() {
 // //   String phoneNumber = '552961416';

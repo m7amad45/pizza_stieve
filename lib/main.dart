@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
-        // pageRoutes.ContactUs: (context) => ContactUsPage(),
+        pageRoutes.ContactUs: (context) => ContactUsPage(),
       },
     );
   }
