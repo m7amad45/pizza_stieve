@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import '../Drawer.dart';
 
 class AppStateNotifier extends ChangeNotifier {
-<<<<<<< HEAD
-=======
   //
->>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
   bool isDarkMode = false;
 
   void updateTheme(bool isDarkMode) {
@@ -16,17 +13,10 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
-<<<<<<< HEAD
-class ContactUsPage extends StatelessWidget {
-  static const String routeName = '/ContactUsPage';
-
-  const ContactUsPage({super.key});
-=======
 class contactUsPage extends StatelessWidget {
   static const String routeName = '/contactUsPage';
 
   const contactUsPage({super.key});
->>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
 
   @override
   Widget build(BuildContext context) {
@@ -34,15 +24,11 @@ class contactUsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Contact Us"),
       ),
-<<<<<<< HEAD
-=======
       drawer: DrawerScreen(),
->>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
       body: Center(
         child: Container(
           color: Theme.of(context).colorScheme.secondary,
           child: Text(
-<<<<<<< HEAD
             '''Here in Contact us
 
              you have any questions or problems while using
@@ -65,15 +51,6 @@ class contactUsPage extends StatelessWidget {
 
 
  ''',
-=======
-            '''Here in About us
-
-            you have any questions or problems while using
-our pizza steve app, visit the following pages ethir Whatsapp phone number or 
-Email .
-
-''',
->>>>>>> fa3281a7a703649714b6a6a568ea282a892c3ba3
             style: Theme.of(context).textTheme.headline4,
           ),
         ),
@@ -81,6 +58,7 @@ Email .
     );
   }
 }
+
 
 // // void main() {
 // //   String phoneNumber = '552961416';
@@ -98,5 +76,4 @@ Email .
 // // i take some of Contact us from many apps and internet  : 
 // //Galary , massage and whatsapp . with some limit action for the user  
 // // we make Contact us page alone not together is to make it easy to mold operations and change becomes
-// // flexible with no interfernce in other pages to avoid Errors .
-
+// // flexible with no interfernce in other pages to avoid Error

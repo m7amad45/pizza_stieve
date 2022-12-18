@@ -15,12 +15,12 @@ import 'routes/pageRoute.dart';
 
 void main() async {
   try {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  
-  cameras = await availableCameras();
-  }on CameraException catch (e) {
-  print('Error in fetching the cameras: $e');
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+
+    cameras = await availableCameras();
+  } on CameraException catch (e) {
+    print('Error in fetching the cameras: $e');
   }
   runApp(const MyApp());
 }
@@ -45,10 +45,8 @@ class MyApp extends StatelessWidget {
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
-        // pageRoutes.contactUs: (context) => contactUsPage(),
+        pageRoutes.ContactUs: (context) => contactUsPage(),
         pageRoutes.camera: (context) => CameraScreen(),
-
-
       },
     );
   }
