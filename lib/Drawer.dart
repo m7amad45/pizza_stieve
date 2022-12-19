@@ -31,16 +31,22 @@ class DrawerScreen extends StatelessWidget {
         children: [
           listTile1(
             ListIcon: Icons.info_outline,
-            ListText: "noti",
-            ListFunction: () =>
-                Navigator.pushNamed(context, pageRoutes.notif),
-          ),
-
-          listTile1(
-            ListIcon: Icons.info_outline,
             ListText: "about Us",
             ListFunction: () =>
                 Navigator.pushNamed(context, pageRoutes.aboutUs),
+          ),
+          listTile1(
+            ListIcon: Icons.account_circle,
+            ListText: "profile",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.profile),
+          ),
+
+          listTile1(
+            ListIcon: Icons.contact_page,
+            ListText: "Contact Us",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.ContactUs),
           ),
           listTile1(
             ListIcon: Icons.home_outlined,
@@ -53,29 +59,14 @@ class DrawerScreen extends StatelessWidget {
           //   ListFunction: () => Navigator.pushNamed(context, pageRoutes.login),
           // ),
           listTile1(
-            ListIcon: Icons.account_circle,
-            ListText: "profile",
-            ListFunction: () =>
-                Navigator.pushNamed(context, pageRoutes.profile),
-          ),
-          // listTile1(
-          //   ListIcon: Icons.app_registration_outlined,
-          //   ListText: "registration",
-          //   ListFunction: () =>
-          //       Navigator.pushNamed(context, pageRoutes.registration),
-          // ),
-          
-          // 
-          // listTile1(
-          //   ListIcon: Icons.info_outline,
-          //   ListText: "Contact Us",
-          //   ListFunction: () =>
-          //       Navigator.pushNamed(context, pageRoutes.ContactUs),
-          // ),
-          listTile1(
             ListIcon: Icons.camera,
             ListText: "Camera",
             ListFunction: () => Navigator.pushNamed(context, pageRoutes.camera),
+          ),
+          listTile1(
+            ListIcon: Icons.notifications,
+            ListText: "noti",
+            ListFunction: () => Navigator.pushNamed(context, pageRoutes.notif),
           ),
         ],
       ),

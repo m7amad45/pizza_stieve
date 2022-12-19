@@ -16,7 +16,7 @@ class pageRoutes {
   static const String aboutUs = aboutUsPage.routeName;
   static const String profile = profilePage.routeName;
   static const String login = loginPage.routeName;
-  // static const String ContactUs = contactUsPage.routeName;
+  static const String ContactUs = contactUsPage.routeName;
   static const String notif = noti.routeName;
   static const String camera = CameraScreen.routeName;
 }
