@@ -1,79 +1,74 @@
-import 'dart:html';
-import 'AppNotifier.dart';
-import 'package:flutter/material.dart';
-import '../Drawer.dart';
+// import 'dart:html';
+// import 'AppNotifier.dart';
+// import 'package:flutter/material.dart';
+// import '../Drawer.dart';
 
-class AppStateNotifier extends ChangeNotifier {
-  //
-  bool isDarkMode = false;
+// class AppStateNotifier extends ChangeNotifier {
+//   //
 
-  void updateTheme(bool isDarkMode) {
-    this.isDarkMode = isDarkMode;
-    notifyListeners();
-  }
-}
+// }
 
-class contactUsPage extends StatelessWidget {
-  static const String routeName = '/contactUsPage';
+// class contactUsPage extends StatelessWidget {
+//   static const String routeName = '/contactUsPage';
 
-  const contactUsPage({super.key});
+//   const contactUsPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: AppBar(
-        title: Text("Contact Us"),
-      ),
-      drawer: DrawerScreen(),
-      body: Center(
-        child: Container(
-          color: Theme.of(context).colorScheme.secondary,
-          child: Text(
-            '''Here in Contact us
+//   @override
+//   Widget build(BuildContext context) {
+//     return new Scaffold(
+//       appBar: AppBar(
+//         title: Text("Contact Us"),
+//       ),
+//       drawer: DrawerScreen(),
+//       body: Center(
+//         child: Container(
+//           color: Theme.of(context).colorScheme.secondary,
+//           child: Text(
+//             '''Here in Contact us
 
-             you have any questions or problems while using
- our pizza steve app, visit the following pages ethir Whatsapp phone number or 
- Email .
+//              you have any questions or problems while using
+//  our pizza steve app, visit the following pages ethir Whatsapp phone number or 
+//  Email .
  
- For the Emirates, contact us on the following number 80038888 from 9 am to 11 pm
+//  For the Emirates, contact us on the following number 80038888 from 9 am to 11 pm
 
- For Saudi Arabia, contact us at (966) 552961416 from 8 am to 10 pm
+//  For Saudi Arabia, contact us at (966) 552961416 from 8 am to 10 pm
 
- For Egypt, call us on 16358 from 9 am to 9 pm.
+//  For Egypt, call us on 16358 from 9 am to 9 pm.
 
- For the Emirates and Saudi Arabia, communicate
+//  For the Emirates and Saudi Arabia, communicate
 
- with us on e-mail
+//  with us on e-mail
 
- ammmar0089@gmail.com
+//  ammmar0089@gmail.com
 
- For Egypt, email us at egypt@noon.com
-
-
- ''',
-            style: Theme.of(context).textTheme.headline4,
-          ),
-        ),
-      ),
-    );
-  }
-}
+//  For Egypt, email us at egypt@noon.com
 
 
-// // void main() {
-// //   String phoneNumber = '552961416';
+//  ''',
+//             style: Theme.of(context).textTheme.headline4,
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-// //   String formattedPhoneNumber =
-// //       phoneNumber.replaceFirst("(\d{3})(\d{3})(\d+)", "(\$9) \$6-\$6");
 
-// //   print('Formatted number ${formattedPhoneNumber}');
+// // // void main() {
+// // //   String phoneNumber = '552961416';
 
-// //   String browserRequirementsUrl = "ammmar0089@gmail.com";
-// //   var url;
-// //   var someText = new ParagraphElement()
-// //     ..innerHtml = "Link can be found <a href= ${url}>here</a>[1].";
-// // }
-// // i take some of Contact us from many apps and internet  : 
-// //Galary , massage and whatsapp . with some limit action for the user  
-// // we make Contact us page alone not together is to make it easy to mold operations and change becomes
-// // flexible with no interfernce in other pages to avoid Error
+// // //   String formattedPhoneNumber =
+// // //       phoneNumber.replaceFirst("(\d{3})(\d{3})(\d+)", "(\$9) \$6-\$6");
+
+// // //   print('Formatted number ${formattedPhoneNumber}');
+
+// // //   String browserRequirementsUrl = "ammmar0089@gmail.com";
+// // //   var url;
+// // //   var someText = new ParagraphElement()
+// // //     ..innerHtml = "Link can be found <a href= ${url}>here</a>[1].";
+// // // }
+// // // i take some of Contact us from many apps and internet  : 
+// // //Galary , massage and whatsapp . with some limit action for the user  
+// // // we make Contact us page alone not together is to make it easy to mold operations and change becomes
+// // // flexible with no interfernce in other pages to avoid Error

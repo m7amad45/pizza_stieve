@@ -19,16 +19,19 @@ class _profilePageState extends State<profilePage> {
         title: Text("My Profile"),
       ),
       drawer: DrawerScreen(),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Text(user.email!),
-        ElevatedButton(
-          onPressed: () {
-            FirebaseAuth.instance.signOut();
-            Navigator.pushReplacementNamed(context, pageRoutes.welcomePage);
-          },
-          child: Text("signout"),
-        )
-      ]),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Center(child: Text("${user.email!}")),
+            ElevatedButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+                Navigator.pushReplacementNamed(context, pageRoutes.welcomePage);
+              },
+              child: Text("signout"),
+            )
+          ]),
     );
   }
 }

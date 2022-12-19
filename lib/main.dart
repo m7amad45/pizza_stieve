@@ -5,6 +5,7 @@ import 'package:kp/Drawer.dart';
 import 'package:kp/Screens/AboutUs.dart';
 import 'package:kp/Screens/ContactUs.dart';
 import 'package:kp/Screens/login.dart';
+import 'package:kp/Screens/noti.dart';
 import 'package:kp/Screens/profilePage.dart';
 import 'package:kp/Screens/registration.dart';
 import 'package:kp/Screens/welcom_screen.dart';
@@ -39,13 +40,14 @@ class MyApp extends StatelessWidget {
       ),
       home: WelcomeScreen(),
       routes: {
+        pageRoutes.notif:(context) => noti(),
         pageRoutes.welcomePage: (context) => WelcomeScreen(),
         pageRoutes.home: (context) => homePage(),
         pageRoutes.registration: (context) => registrationPage(),
         pageRoutes.aboutUs: (context) => aboutUsPage(),
         pageRoutes.profile: (context) => profilePage(),
         pageRoutes.login: (context) => loginPage(),
-        pageRoutes.ContactUs: (context) => contactUsPage(),
+        // pageRoutes.ContactUs: (context) => contactUsPage(),
         pageRoutes.camera: (context) => CameraScreen(),
       },
     );

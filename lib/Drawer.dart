@@ -31,6 +31,13 @@ class DrawerScreen extends StatelessWidget {
         children: [
           listTile1(
             ListIcon: Icons.info_outline,
+            ListText: "noti",
+            ListFunction: () =>
+                Navigator.pushNamed(context, pageRoutes.notif),
+          ),
+
+          listTile1(
+            ListIcon: Icons.info_outline,
             ListText: "about Us",
             ListFunction: () =>
                 Navigator.pushNamed(context, pageRoutes.aboutUs),
@@ -58,12 +65,13 @@ class DrawerScreen extends StatelessWidget {
           //       Navigator.pushNamed(context, pageRoutes.registration),
           // ),
           
-          listTile1(
-            ListIcon: Icons.info_outline,
-            ListText: "Contact Us",
-            ListFunction: () =>
-                Navigator.pushNamed(context, pageRoutes.ContactUs),
-          ),
+          // 
+          // listTile1(
+          //   ListIcon: Icons.info_outline,
+          //   ListText: "Contact Us",
+          //   ListFunction: () =>
+          //       Navigator.pushNamed(context, pageRoutes.ContactUs),
+          // ),
           listTile1(
             ListIcon: Icons.camera,
             ListText: "Camera",

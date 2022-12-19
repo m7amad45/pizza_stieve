@@ -31,8 +31,6 @@ class _loginPageState extends State<loginPage> {
       }
     } on FirebaseAuthException catch (e) {
       print(e);
-      
-      
     }
   }
 
